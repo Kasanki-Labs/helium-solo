@@ -1,0 +1,1 @@
+{"blobs_checked":1,"checkpoints":4,"deployment_id":"01a1b676-41c2-7fb9-b1e2-e4d13b4b4563","events":15,"intact":false,"licences":{"none":4},"not_yet_checkpointed":[],"problems":["run 01a1b676-4b10-731e-8a45-233c5647b4dc: cut short (checkpoint 2 saw seq 5; store ends at seq 2)","run 01a1b676-4b10-731e-8a45-233c5647b4dc: not covered by any checkpoint"],"runs":3}

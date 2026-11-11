@@ -1,0 +1,8 @@
+Kasanki Helium verify: deployment 01a1b676-41c2-7fb9-b1e2-e4d13b4b4563
+Checked 3 runs (17 events), 4 checkpoints, 1 blobs.
+Licence in checkpoints: 4 none.
+Problems (3):
+  - run 01a1b676-4b10-731e-8a45-233c5647b4dc: segment-000001.jsonl line 2: not in canonical form
+  - run 01a1b676-4b10-731e-8a45-233c5647b4dc: seq 1 missing
+  - run 01a1b676-4b10-731e-8a45-233c5647b4dc: event #1: invalid: kind: seq 1: must be profile, not random.draw
+Result: PROBLEMS FOUND

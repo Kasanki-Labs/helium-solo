@@ -1,0 +1,63 @@
+# Copyright © 2026 Kasanki Labs.
+# SPDX-License-Identifier: AGPL-3.0-only
+# Licensed under the GNU AGPL v3 with an attribution term: see LICENSE and CREDIT.md.
+
+[project]
+name = "kasanki-helium-sdk"
+version = "0.1.0"
+description = "Kasanki Helium SDK: records AI agent runs, tamper-evidently, so each can be replayed exactly."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE", "CREDIT.md"]
+authors = [{ name = "Kasanki Labs" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://helium-solo.pages.dev"
+Source = "https://github.com/Kasanki-Labs/helium-solo"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "kasanki_helium"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18",
+    "pytest>=8.4",
+    "ruff>=0.13",
+]
+
+[tool.ruff]
+target-version = "py310"
+
+[tool.ruff.lint]
+extend-select = ["B", "I", "UP"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["src", "tests"]
+mypy_path = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m not slow')",
+]
